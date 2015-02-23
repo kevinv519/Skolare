@@ -1,0 +1,86 @@
+body{
+	font-family: "Segoe UI";
+}
+#logo{
+	width: 248.78px;
+	height: 40px;
+}
+
+.jumbotron{
+	text-align: center;
+	height: 600px;
+}
+.jumbotron>h1, .jumbotron>p{
+	color: white;
+}
+
+.btn{
+	-webkit-border-radius: 0;
+	-moz-border-radius:    0;
+	border-radius:         0;
+}
+
+.btn-fantasma{
+	background: transparent;
+	border-color: #fff;
+	color: white;
+	-webkit-transition: background .3s ease-in-out, border .3s ease-in-out;
+	-moz-transition: background .3s ease-in-out, border .3s ease-in-out;
+	-ms-transition: background .3s ease-in-out, border .3s ease-in-out;
+	-o-transition: background .3s ease-in-out, border .3s ease-in-out;
+	transition: background .3s ease-in-out, border .3s ease-in-out;
+}
+
+
+.btn-fantasma:hover{
+	background-color: rgba(255,255,255,0.2);
+	color: white;
+}
+.btn-fantasma:active{
+	background:transparent;
+}
+
+#imagen1{
+	background-image: url("../img/f1.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	-webkit-background-size:cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+#EncabezadoSeccion{
+	color: #fff;
+}
+
+#ImagenSeccion{
+	width: 164px;
+	height: 164px;
+}
+p.p{
+	font-size: 15px;
+}
+#TituloSeccion{
+	height: 70px;
+	color: #eee;
+}
+
+#DescripcionSeccion{
+	color: #ddd;
+}
+
+#seccion1{
+	background: #009688;
+}
+
+footer{
+	background: #333;
+	color: #eee;
+	font-size: 11px;
+	padding: 16px;
+}
+ul.unstyled{
+	list-style: none;
+	padding: 0;
+}
