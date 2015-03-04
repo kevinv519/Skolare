@@ -1,29 +1,58 @@
+/*Importaciones fuentes*/
+@font-face{
+	font-family: "Bebas Neue";
+	src: url("../fuentes/BebasNeue.otf");
+}
+@font-face {
+	font-family: 'robotolight';
+	src: url('../fuentes/Roboto-Light.ttf');
+}
+@font-face {
+	font-family: 'newscycle';
+	src: url('../fuentes/NewsCycle-Regular.ttf');
+}
+@font-face {
+	font-family: 'questrial';
+	src: url('../fuentes/Questrial-Regular.ttf');
+}
+@font-face {
+	font-family: 'quicksand';
+	src: url('../fuentes/Quicksand-Regular.ttf');
+}
+@font-face {
+	font-family: 'robotothin';
+	src: url('../fuentes/Roboto-Thin.ttf');
+}
+/*Fin importaciones fuentes*/
+
+/*Etiquetas*/
 body{
-	font-family: "Segoe UI";
+	font-family: "robotolight";
+} 
+footer {
+	background: #333;
+	color: #eee;
+	font-size: 11px;
+	padding: 16px;
 }
-#logo{
-	width: 248.78px;
-	height: 40px;
+hr {
+	border-color: #009A33;
 }
+i {
 
-.jumbotron{
-	text-align: center;
-	height: 600px;
 }
-.jumbotron>h1, .jumbotron>p{
-	color: white;
-}
+/*Fin etiquetas*/
 
-.btn{
+
+/********************Clases**********************************/
+/*Botones*/
+.btn {
 	-webkit-border-radius: 0;
 	-moz-border-radius:    0;
 	border-radius:         0;
 }
 
-.btn-fantasma{
-	background: transparent;
-	border-color: #fff;
-	color: white;
+.btn-animacion {
 	-webkit-transition: background .3s ease-in-out, border .3s ease-in-out;
 	-moz-transition: background .3s ease-in-out, border .3s ease-in-out;
 	-ms-transition: background .3s ease-in-out, border .3s ease-in-out;
@@ -31,56 +60,116 @@ body{
 	transition: background .3s ease-in-out, border .3s ease-in-out;
 }
 
-
-.btn-fantasma:hover{
-	background-color: rgba(255,255,255,0.2);
+.btn-blanco, .btn-blanco:focus, .btn-blanco:active {
+	border-color: #fff;
 	color: white;
 }
-.btn-fantasma:active{
-	background:transparent;
+
+.btn-blanco:hover {
+	background: rgba(255,255,255,0.2);
+	color: white;	
 }
 
-#imagen1{
-	background-image: url("../img/f1.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
-	-webkit-background-size:cover;
+.btn-verde, .btn-verde:focus, .btn-verde:active {
+	border-color: #008F30;
+	color: #008F30;
+}
+
+.btn-verde:hover {
+	background: rgba(0,143,48,0.2);
+	color: #008F30;	
+}
+/*Fin botones*/
+
+.imagenEncabezado {
 	-moz-background-size: cover;
+	-webkit-background-size:cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-#EncabezadoSeccion{
+.jumbotron {
+	height: 650px;
+	text-align: center;
+}
+
+.mi-contenedor{
+	padding: 30px 14px;
+}
+
+.mi-contenedor > h1{
+	padding-top: 50px;
+}
+
+.mi-contenedor, .mi-contenedor-se{
+	color: inherit;
+	margin-bottom: 30px;
+	width: 70%;	
+}
+.p {
+	font-size: 15px;
+}
+
+.texto-blanco {
 	color: #fff;
 }
 
-#ImagenSeccion{
-	width: 164px;
-	height: 164px;
-}
-p.p{
-	font-size: 15px;
-}
-#TituloSeccion{
-	height: 70px;
+.texto-gris {
 	color: #eee;
 }
 
-#DescripcionSeccion{
-	color: #ddd;
+.titulo, .titulo-lg, .titulo-sm {
+	font-family: "Bebas Neue";
 }
 
-#seccion1{
-	background: #009688;
+.titulo-lg {
+	font-size: 45px;
+	letter-spacing: 5px;
 }
 
-footer{
-	background: #333;
-	color: #eee;
-	font-size: 11px;
-	padding: 16px;
+.titulo-sm {
+	font-size: 17pt;
 }
-ul.unstyled{
+
+/*Titulo subrrayado*/
+.titulo-sb{
+	border-bottom: 2px solid #35A027;
+}
+
+.unstyled {
 	list-style: none;
 	padding: 0;
 }
+/********************Fin clases******************************/
+
+
+/*Id's*/
+#logo {
+	height: 40px;
+	margin-top: 2px;
+	width: 248.78px;
+}
+
+#encabezado1 {
+	background-image: url("../img/fondos/f1.jpg");
+}
+
+#encabezado2 {
+	background-image: url("../img/fondos/f2.jpg");	
+}
+
+#ImagenSeccion {
+	width: 164px;
+	height: 164px;
+}
+
+#seccionAqua {
+	background: #009688;
+}
+
+#TituloSeccion {
+	height: 50px;
+}
+/*Fin id's

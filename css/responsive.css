@@ -1,9 +1,13 @@
+/*Para tamaños grandes*/
 @media all and (min-width: 1000px){
 	.jumbotron>h1{
 		padding-top: 220px;
 	}
 }
+/*Fin para tamaños grandes*/
 
+
+/*Para tamaños medianos*/
 @media all and (min-width: 700px) and (max-width: 999px){
 	.jumbotron>h1{
 		padding-top: 190px;
@@ -11,27 +15,15 @@
 
 	@media all and (min-width: 750px){
 		#TituloSeccion{
-			height: 90px;
+			height: 70px;
 		}
 	}
 }
+/*Fin para tamaños medianos*/
 
+
+/*Para tamaños pequeños*/
 @media all and (max-width: 699px){
-	.jumbotron{
-		height: 450px;
-	}
-	.jumbotron>h1{
-		padding-top: 120px;
-	}
-	#logo{
-		width: 187.32px;
-		height: 30px;
-		margin-top: 8px;
-	}
-	#TituloSeccion{
-		height:50px;
-	}
-	#imagen1{
-		background-attachment: inherit;
-	}
+	
 }
+/*Fin para tamaños pequeños*/
